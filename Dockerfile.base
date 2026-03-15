@@ -34,7 +34,7 @@ RUN cp supervisord.conf /etc/supervisor/conf.d/supervisord.conf \
   && mkdir -p /etc/caddy && cp Caddyfile /etc/caddy/Caddyfile \
   && chmod +x entrypoint.sh
 
-ENV API_PORT=4000
+ENV API_PORT=4003
 EXPOSE 8080
 
 ENTRYPOINT ["/workspace/project/entrypoint.sh"]
