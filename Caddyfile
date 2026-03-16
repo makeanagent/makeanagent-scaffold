@@ -1,6 +1,8 @@
 :8080 {
 	handle /rpc/* {
-		reverse_proxy localhost:4003
+		reverse_proxy localhost:4003 {
+			flush_interval -1
+		}
 	}
 
 	handle /health-check {
@@ -8,7 +10,9 @@
 	}
 
 	handle /logs/* {
-		reverse_proxy localhost:4003
+		reverse_proxy localhost:4003 {
+			flush_interval -1
+		}
 	}
 
 	handle /cli {
