@@ -886,6 +886,7 @@ __metadata:
   resolution: "@makeanagent/functions@workspace:packages/functions"
   dependencies:
     "@pikku/addon-console": "npm:^0.12.6"
+    "@pikku/addon-graph": "npm:^0.0.2"
     "@pikku/addon-workflow-screenshot": "npm:^0.12.2"
     "@pikku/core": "npm:^0.12.9"
     "@types/node": "npm:^25"
@@ -1048,6 +1049,18 @@ __metadata:
   peerDependencies:
     "@pikku/core": ^0.12.3
   checksum: 10c0/27cc8198050d8f3f39fb2f83123124812aee52a00ea4324ee18dc059fbae34f0cf530a3cb8d5ebee610437063987a36eea51883a1ddab3fa40ce04f9e7dbcbbc
+  languageName: node
+  linkType: hard
+
+"@pikku/addon-graph@npm:^0.0.2":
+  version: 0.0.2
+  resolution: "@pikku/addon-graph@npm:0.0.2"
+  dependencies:
+    dayjs: "npm:^1.11.19"
+  peerDependencies:
+    "@pikku/core": "*"
+    zod: ^4
+  checksum: 10c0/5617893938ea0cfb34d9c4324add636b12e39a28323f7f02c72a5a1c58d6dcfd494e9e29cface06329701ba7ca396873e4affc3e0126556daaff6f0716144a94
   languageName: node
   linkType: hard
 
@@ -3340,6 +3353,13 @@ __metadata:
   version: 3.2.3
   resolution: "csstype@npm:3.2.3"
   checksum: 10c0/cd29c51e70fa822f1cecd8641a1445bed7063697469d35633b516e60fe8c1bde04b08f6c5b6022136bb669b64c63d4173af54864510fbb4ee23281801841a3ce
+  languageName: node
+  linkType: hard
+
+"dayjs@npm:^1.11.19":
+  version: 1.11.20
+  resolution: "dayjs@npm:1.11.20"
+  checksum: 10c0/8af525e2aa100c8db9923d706c42b2b2d30579faf89456619413a5c10916efc92c2b166e193c27c02eb3174b30aa440ee1e7b72b0a2876b3da651d204db848a0
   languageName: node
   linkType: hard
 
