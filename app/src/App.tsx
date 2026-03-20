@@ -17,7 +17,7 @@ function App() {
       </div>
       <div style={{ flex: 1, minHeight: 0 }}>
         <PikkuAgentChat
-          api={import.meta.env.VITE_API_URL ?? 'http://localhost:4002/rpc/agent'}
+          api={import.meta.env.VITE_API_URL ?? '/rpc/agent'}
           agentName="routerAgent"
           threadId={threadIdRef.current}
           resourceId="default"
