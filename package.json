@@ -9,6 +9,7 @@
     "packages": [
       "packages/**",
       "app",
+      "console",
       "backend",
       "mcp-server"
     ]
