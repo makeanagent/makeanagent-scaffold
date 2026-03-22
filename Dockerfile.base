@@ -24,6 +24,9 @@ COPY . .
 
 RUN yarn install
 
+# TEMP: patch inspector schema-generator until @pikku/inspector is published with fix
+COPY patches/inspector/schema-generator.js node_modules/@pikku/inspector/dist/utils/schema-generator.js
+
 RUN yarn pikku
 
 # Build frontend as static files

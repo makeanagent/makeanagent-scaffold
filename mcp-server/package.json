@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@pikku/core": "^0.12.10",
-    "@pikku/modelcontextprotocol": "^0.12.4"
+    "@pikku/modelcontextprotocol": "^0.12.4",
+    "tsx": "^4.21.0"
   }
 }

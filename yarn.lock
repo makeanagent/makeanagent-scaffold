@@ -1042,6 +1042,7 @@ __metadata:
   dependencies:
     "@pikku/core": "npm:^0.12.10"
     "@pikku/modelcontextprotocol": "npm:^0.12.4"
+    tsx: "npm:^4.21.0"
   languageName: unknown
   linkType: soft
 

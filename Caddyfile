@@ -22,6 +22,14 @@
 	}
 
 	handle /mcp {
+		header Access-Control-Allow-Origin *
+		header Access-Control-Allow-Methods "GET, POST, OPTIONS, DELETE"
+		header Access-Control-Allow-Headers "Content-Type, Accept, Mcp-Session-Id"
+		header Access-Control-Expose-Headers "Mcp-Session-Id"
+
+		@options method OPTIONS
+		respond @options 204
+
 		reverse_proxy localhost:{$MCP_PORT} {
 			flush_interval -1
 		}
